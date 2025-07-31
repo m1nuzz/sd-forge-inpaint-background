@@ -33,7 +33,7 @@ class InpaintBackgroundTab(OperationMode):
             with gr.Row():
                 self.inpaint_img_component.render()
             
-            self.inpaint_visual_mask_component = gr.Image(label="Background mask", interactive=False, type="pil", elem_id="mask_inpaint_background", tool="sketch", height=opts.img2img_editor_height, brush_color=opts.img2img_inpaint_mask_brush_color)
+            self.inpaint_visual_mask_component = gr.Image(label="Background mask", interactive=False, type="pil", elem_id="mask_inpaint_background", tool="sketch")
 
     def section(self, components):
         self.img2img_mask_blur = components["img2img_mask_blur"]
